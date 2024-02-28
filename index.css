@@ -3,7 +3,71 @@
     padding: 0;
     box-sizing: border-box;
     font-family:"Merriweather", serif;
-    ;
+    color: #dad7cb;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #FFEB99;
+}
+:root{
+    --color-svjetloljub:#A486D5;
+    --color-tamnoljub:#54318C;
+    --color-svjetlozut:#FFEB99;
+    --color-tamnozut:#FFCC00;
+    --color-midzut:#FFDE5C;
+    
+    
+
+
+}
+
+
+a{
+    text-decoration: none;
+}   
+header{
+    background-color: #A486D5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+}
+
+nav {
+    display: flex;
+   justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    padding: 5px;
+}
+
+nav > ul{
+    display: flex;
+    justify-content:space-evenly;
+    text-decoration: none;
+    list-style-type: none;
+
+
+}
+ .menu li{
+    margin-inline: 50px;
+
+ }
+ .menu a:hover{
+    color: var(--color-tamnoljub);
+ }
+
+
+
+.logo img{
+    height: 70px;
+   
 }
 
   
