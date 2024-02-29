@@ -55,6 +55,27 @@ nav > ul{
 
 
 }
+nav ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  nav ul li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: var(--color-midzut);
+    transition:all .5s;
+  }
+
+  nav ul li a:hover::after{
+    width: 100%;
+  }
  .menu li{
     margin-inline: 50px;
 
@@ -69,5 +90,71 @@ nav > ul{
     height: 70px;
    
 }
+.hero-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 70%;
+    width: 80%;
+    top: 20%;
+    left: 10%;
+    padding-bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border: solid 2px rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+  }
+  .hero-img {
+    max-width: 260px;
+    height: auto;
+    padding-top: 30%;
+  }
+.content-left{
+    padding-right: 7%;
+  }
 
+  .content-right{
+    width: 50%;
+    margin-right: 5%;
+    padding-left: 3%;
+  }
+  
+  .landing-page{
+    height: 100vh;
+    width: 100vw; 
+    background: rgb(16,0,43);
+    background: -moz-linear-gradient(200deg, rgba(16,0,43,1) 0%, rgba(60,9,108,1) 52%, rgba(199,125,255,1) 87%, rgba(224,170,255,0.7) 100%);
+    background: -webkit-linear-gradient(200deg, rgba(16,0,43,1) 0%, rgba(60,9,108,1) 52%, rgba(199,125,255,1) 87%, rgba(224,170,255,0.7) 100%);
+    background: linear-gradient(200deg, rgba(16,0,43,1) 0%, rgba(60,9,108,1) 52%, rgba(199,125,255,1) 87%, rgba(224,170,255,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10002b",endColorstr="#e0aaff",GradientType=1);
+    background-attachment: fixed;
+  }
+
+  .landing-page h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: whitesmoke;
+    text-shadow: 2px;
+  }
+
+  .landing-page h2{
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: whitesmoke;
+    padding-left: 260px;
+    text-shadow: 2px;
+  }
+
+  .landing-page p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: whitesmoke;
+    text-shadow: 2px;
+  }
+
+  .landing-page span{
+    color: var(--color-midzut);
+  }
   

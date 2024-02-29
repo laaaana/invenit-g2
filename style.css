@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Merriweather", serif;
+    color: #dad7cb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+  
+body {
+background: #54318C;
+}
+
+:root {
+    --color-svjetloljub: #A486D5;
+    --color-tamnoljub: #54318C;
+    --color-svjetlozut: #FFEB99;
+    --color-tamnozut: #FFCC00;
+    --color-midzut: #FFDE5C;
+}
+
+header {
+    background-color: #A486D5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    padding: 5px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+nav ul li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: var(--color-midzut);
+    transition:all .5s;
+  }
+  nav ul li {
+    margin: 0 30px;
+  }
+
+  nav ul li a:hover::after{
+    width: 100%;
+  }
+
+.menu li a {
+   
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.logo img {
+    margin-left: 25px;
+    height: 80px;
+}
+
+.menu a:hover {
+    color: var(--color-tamnoljub);
+}
+
+.landing-page {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    margin-top: 140px;
+
+  background: rgb(73,39,126);
+  background: linear-gradient(0deg, rgba(73,39,126,1) 43%, rgba(164,134,213,1) 84%);
+   
+}
+.hero-card {
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.Koda img {
+    max-width: 280px;
+    max-height: 280x;
+    padding-top: 100px;
+
+
+}
+
+.Slogan span{
+    color: #FFDE5C;
+}
+
+.Slogan {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Slogan h1{
+ font-size: 5rem;
+}
+.Slogan h2{
+    font-size: 3rem;
+    width: 100%;
+    text-align:center;
+    color: var(--color-svjetloljub);
+   }
+   .Slogan p{
+    font-size: 1.3rem;
+   }
+
