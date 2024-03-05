@@ -142,10 +142,13 @@ nav ul li a::after{
    .druga{
     padding-top: 50px;
    background-color: var(--color-svjetloljub);
-   border-top:solid #FFCC00;
+
    height: 100vh;
    width: 100vw;
-
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0%;
+   
    }
 
    .druga-cards{
@@ -155,7 +158,12 @@ nav ul li a::after{
     flex-direction: row;
     justify-content: space-around;
     gap: 20px;
-    padding: 50px;
+    padding: 60px;
+    width: 90%;
+    background-color: #54318C;
+    margin-left: 60px;
+    
+    
    }
 
    .cards {
@@ -164,8 +172,21 @@ nav ul li a::after{
     justify-content:center ;
     width: 380px;
     height: 170px;
-    background-color: whitesmoke;
-    }
+    background-color: rgb(73,39,126);
+    background: linear-gradient(0deg, rgba(73,39,126,1) 43%, rgba(164,134,213,1) 84%);
+    padding-left: 10px;
+    border-radius: 10px;
+    
+  
+   
+   }
+
+   .cards img{
+    object-fit: cover;
+  }
+   
+ 
+   
 
     .text{
         font-size: 1rem;
@@ -173,11 +194,12 @@ nav ul li a::after{
    .typing{
     display: flex;
   justify-content: center;
+  
    }
 
    .naslov h1 {
-    font-size: 2.5rem;
-    font-family: Kanit:;
+    font-size: 3.5rem;
+    font-family: Merriweather;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -191,11 +213,10 @@ nav ul li a::after{
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation: 
+    animation:
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
   }
-  
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
@@ -207,7 +228,210 @@ nav ul li a::after{
     50% { border-color: orange }
   }
 
+  .text h3{
+    color: var(--color-midzut);
+   
+
+
+  }
+  .text p{
+    color: #dad7cb;
+  }
   
+ 
+  .treca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    height: 100px;
+  
+    padding-top: 0%;
+  }
+
+  
+  .swiper {
+    width: 100%;
+    height: 80%;
+  }
+  
+  .cetvrta{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    width: 100wh;
+  }
+  .swiper-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+.swiper .swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 70%;
+  height: 20%;
+}
+.zanimanja{
+  width: 80%;
+  height: 200px;
+  border: #FFCC00;
+  background-color: rgb(255,204,0);
+  background: linear-gradient(5deg, rgba(255,204,0,1) 24%, rgba(164,134,213,1) 66%);
+  border-radius: 5px;
+  display: flex;
+ 
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 60px;
+      margin-left: 90px;
+     
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.zanimanja p {
+  margin: 10px;
+  color: #54318C;
+  justify-content: flex-end;
+  
+}
+  
+.zanimanja img{
+  height: 200px;
+  width: 200px;
+  
+}
+
+.patkice{
+  display: flex;
+  flex-direction: column;
+  border: solid #A486D5;
+  background-color: #A486D5;
+}
+
+.slike img{
+  height: 90px;
+  width: auto;
+}
     
 
   
+.cards {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 40px;
+  
+}
+
+.reason-card {
+  position: relative;
+  width: 170px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  border: 3px solid var(--color-purple-dark);
+  border-radius: 30px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  border-radius: 30px;
+}
+
+.reason-card:hover {
+  transform: rotateY(180deg);
+}
+
+.front-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-color: var(--color-purple-dark);
+  background: -moz-linear-gradient(155deg, rgba(16, 0, 43, 1) 0%, rgba(30, 0, 43, 0.9) 50%, rgba(16, 0, 43, 0.6) 100%);
+  background: -webkit-linear-gradient(155deg, rgba(16, 0, 43, 1) 0%, rgba(24, 0, 43, 0.9) 50%, rgba(16, 0, 43, 0.6) 100%);
+  background: linear-gradient(155deg, rgba(16, 0, 43, 1) 0%, rgba(24, 0, 43, 0.9) 50%, rgba(16, 0, 43, 0.6) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10002b", endColorstr="#10002b", GradientType=1);
+  color: #000;
+  border-radius: 30px;
+}
+
+.back-side {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #A486D5;
+  color: #fafafa;
+  border: 2px solid var(--color-purple-dark);
+  transform: rotateY(180deg);
+  border-radius: 30px;
+}
+
+.cards img {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+}
+
+.cards h4 {
+  display: flex;
+  justify-content: center;
+  color: #fafafa;
+  padding-top: 20px;
+  font-size: 100%;
+  text-align: center;
+}
+
+.cards p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.peta{
+  width: 100vw;
+  /* height:100vh; */
+}
