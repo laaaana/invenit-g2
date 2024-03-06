@@ -142,8 +142,7 @@ nav ul li a::after{
    .druga{
     padding-top: 50px;
    background-color: var(--color-svjetloljub);
-
-   height: 100vh;
+   /* height: 100vh; */
    width: 100vw;
     align-items: center;
     justify-content: center;
